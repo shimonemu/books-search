@@ -6,16 +6,12 @@ import { GoogleApiHttpService } from './services/google-api-http.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'Books Search';
   searchText: string = '';
   booksVolumes: any[] = [];
   isLoading = false;
   constructor(private googleApi: GoogleApiHttpService) {}
-
-  ngOnInit() {
-    //this.onSearch();
-  }
 
   onSearch() {
     this.isLoading = true;
