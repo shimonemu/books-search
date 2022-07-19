@@ -12,7 +12,7 @@
     <ng-container *ngFor="let volume of booksVolumes">
       <div class="card">
         <img
-          [src]="volume.volumeInfo?.imageLinks?.smallThumbnail"
+          [src]="volume.volumeInfo?.imageLinks?.thumbnail"
           [alt]="volume.volumeInfo.title"
         />
         <div class="card-container">
